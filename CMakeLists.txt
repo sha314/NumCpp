@@ -1,0 +1,42 @@
+##########################
+#	run command
+#	cmake . && make
+#	from a directory where the all output files should be created
+##########################
+
+cmake_minimum_required(VERSION 3.0)
+project(NumCpp)
+
+#set(CMAKE_MAJOR_VERSION 1)
+#set(CMAKE_MINOR_VERSION 0)
+#set(CMAKE_PATCH_VERSION 0)
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(SOURCE_FILES
+	src/flags.h
+	src/matrix/matrix.h
+	src/matrix/matrix.cpp
+	src/matrix/nArray.h
+	src/matrix/nArray.cpp
+	src/ode/ode.h
+	src/ode/ode.cpp
+	src/tests/matrix_test.h
+	src/tests/ode_test.h
+	src/main.cpp
+)
+
+
+#set(EXECUTABLE_OUTPUT_PATH "cmake-build-debug") # adds executables to "cmake-build-debug" directory
+
+# this one is important
+# SET(CMAKE_SYSTEM_NAME Windows)
+# SET(CMAKE_SYSTEM_NAME Linux)
+
+set(CMAKE_BINARY_DIR ".")
+
+# set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+# set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_executable(numcpp ${SOURCE_FILES})
