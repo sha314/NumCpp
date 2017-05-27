@@ -19,8 +19,12 @@ set(SOURCE_FILES
 	src/matrix/matrix.cpp
 	src/matrix/nArray.h
 	src/matrix/nArray.cpp
-	src/ode/ode.h
-	src/ode/ode.cpp
+	src/calculus/ode.h
+	src/calculus/ode.cpp
+	src/calculus/integration.h
+	src/calculus/integration.cpp
+	src/math/math.h
+	src/math/math.cpp
 	src/tests/matrix_test.h
 	src/tests/ode_test.h
 	src/main.cpp

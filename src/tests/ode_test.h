@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "../ode/ode.h"
+#include "../calculus/ode.h"
 
 using namespace std;
 

@@ -5,10 +5,11 @@
 //test headers
 #include "tests/matrix_test.h"
 #include "tests/ode_test.h"
+#include "tests/math_test.h"
 
 using namespace std;
 
-void matrix_test(){
+void matrix_tests(){
     test_1();
     test_2();
     test_3();
@@ -17,14 +18,20 @@ void matrix_test(){
 }
 
 
-void ode_test(){
+void ode_tests(){
     ode_test_1();
     ode_test_2();
 }
 
+void math_tests(){
+    // math_test_1();
+    math_test_2();
+}
+
 int main(int argc, char ** argv) {
-    // matrix_test();
-    ode_test();
+    // matrix_tests();
+    // ode_tests();
+    math_tests();
 
 
     return 0;
