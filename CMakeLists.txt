@@ -28,7 +28,11 @@ set(SOURCE_FILES
 	src/tests/matrix_test.h
 	src/tests/ode_test.h
 	src/main.cpp
-)
+		src/io/data_writer.cpp
+		src/io/data_writer.h
+		src/io/data_reader.h
+		src/io/data_reader.cpp
+		src/tests/test_io.cpp src/tests/test_io.h)
 
 
 #set(EXECUTABLE_OUTPUT_PATH "cmake-build-debug") # adds executables to "cmake-build-debug" directory
